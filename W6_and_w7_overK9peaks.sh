@@ -20,28 +20,28 @@ mkdir -p w6_w7_peak_arm_peri_plots
 #cd /groups/berger/lab/Anna/ngs/uli1/Nextflow_ChIP-seq/results/uli1/main/w6peak_regions/
 
 computeMatrix reference-point  -S ${wt_w_bigwigs} -R  ${k9me2peaks_peri}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/wt_k9me2peaks_peri.gz 
- plotProfile -m w6_w7_peak_arm_peri_plots/wt_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/wt_k9me2peaks_peri.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/wt_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/wt_k9me2peaks_peri.png --perGroup 
 
 computeMatrix reference-point  -S ${iswi_w_bigwigs} -R  ${k9me2peaks_peri}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_peri.gz 
- plotProfile -m w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_peri.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_peri.png --perGroup 
 
  computeMatrix reference-point  -S ${wt_w_bigwigs} -R  ${k9me2peaks_arms}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/wt_k9me2peaks_arms.gz
- plotProfile -m w6_w7_peak_arm_peri_plots/wt_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/wt_k9me2peaks_arms.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/wt_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/wt_k9me2peaks_arms.png --perGroup 
 
 computeMatrix reference-point  -S ${iswi_w_bigwigs} -R  ${k9me2peaks_arms}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_arms.gz
- plotProfile -m w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_arms.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/iswi_k9me2peaks_arms.png --perGroup 
 
  
 #######
 computeMatrix reference-point  -S ${w6_bigwigs} -R  ${k9me2peaks_peri}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/w6_k9me2peaks_peri.gz 
- plotProfile -m w6_w7_peak_arm_peri_plots/w6_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/w6_k9me2peaks_peri.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/w6_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/w6_k9me2peaks_peri.png --perGroup 
 
 computeMatrix reference-point  -S ${w7_bigwigs} -R  ${k9me2peaks_peri}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/w7_k9me2peaks_peri.gz 
- plotProfile -m w6_w7_peak_arm_peri_plots/w7_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/w7_k9me2peaks_peri.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/w7_k9me2peaks_peri.gz -out w6_w7_peak_arm_peri_plots/w7_k9me2peaks_peri.png --perGroup 
 
  computeMatrix reference-point  -S ${w6_bigwigs} -R  ${k9me2peaks_arms}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/w6_k9me2peaks_arms.gz
- plotProfile -m w6_w7_peak_arm_peri_plots/w6_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/w6_k9me2peaks_arms.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/w6_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/w6_k9me2peaks_arms.png --perGroup 
 
 computeMatrix reference-point  -S ${w7_bigwigs} -R  ${k9me2peaks_arms}  --referencePoint center --beforeRegionStartLength 3000 --afterRegionStartLength 3000  --skipZeros -o w6_w7_peak_arm_peri_plots/w7_k9me2peaks_arms.gz
- plotProfile -m w6_w7_peak_arm_peri_plots/w7_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/w7_k9me2peaks_arms.png --perGroup --yMin 0 --yMax 1.6
+ plotProfile -m w6_w7_peak_arm_peri_plots/w7_k9me2peaks_arms.gz -out w6_w7_peak_arm_peri_plots/w7_k9me2peaks_arms.png --perGroup 
 
